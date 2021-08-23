@@ -1,0 +1,682 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20PU U1
+U 1 1 61208596
+P 4700 5600
+F 0 "U1" V 4033 5600 50  0000 C CNN
+F 1 "ATtiny85-20PU" V 4124 5600 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4700 5600 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 4700 5600 50  0001 C CNN
+	1    4700 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6120BA81
+P 1600 5400
+F 0 "R1" V 1500 5400 50  0000 C CNN
+F 1 "1.5K" V 1600 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1530 5400 50  0001 C CNN
+F 3 "~" H 1600 5400 50  0001 C CNN
+	1    1600 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6120BEC4
+P 2000 5150
+F 0 "R2" H 1850 5150 50  0000 L CNN
+F 1 "68" V 2000 5100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1930 5150 50  0001 C CNN
+F 3 "~" H 2000 5150 50  0001 C CNN
+	1    2000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6120CEB7
+P 4700 4700
+F 0 "C2" V 4448 4700 50  0000 C CNN
+F 1 "0.1uf" V 4539 4700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4738 4550 50  0001 C CNN
+F 3 "~" H 4700 4700 50  0001 C CNN
+	1    4700 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 61218E70
+P 2500 5800
+F 0 "#PWR06" H 2500 5550 50  0001 C CNN
+F 1 "GND" V 2505 5672 50  0000 R CNN
+F 2 "" H 2500 5800 50  0001 C CNN
+F 3 "" H 2500 5800 50  0001 C CNN
+	1    2500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6121BB62
+P 3900 5600
+F 0 "#PWR02" H 3900 5350 50  0001 C CNN
+F 1 "GND" V 3905 5472 50  0000 R CNN
+F 2 "" H 3900 5600 50  0001 C CNN
+F 3 "" H 3900 5600 50  0001 C CNN
+	1    3900 5600
+	0    1    1    0   
+$EndComp
+Text GLabel 4500 6200 3    50   Input ~ 0
+PB5
+Text GLabel 5000 6200 3    50   Input ~ 0
+PB0
+Text GLabel 4900 6200 3    50   Input ~ 0
+PB1
+Text GLabel 4800 6200 3    50   Input ~ 0
+PB2
+Text GLabel 4600 6200 3    50   Input ~ 0
+PB4
+Text GLabel 4700 6200 3    50   Input ~ 0
+PB3
+Text GLabel 2100 4700 1    50   Input ~ 0
+PB3
+Text GLabel 2000 4700 1    50   Input ~ 0
+PB4
+Wire Wire Line
+	2000 4700 2000 5000
+Wire Wire Line
+	2100 4700 2100 5000
+$Comp
+L Device:C C1
+U 1 1 6127A701
+P 4700 4300
+F 0 "C1" V 4448 4300 50  0000 C CNN
+F 1 "4.7uf" V 4539 4300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4738 4150 50  0001 C CNN
+F 3 "~" H 4700 4300 50  0001 C CNN
+	1    4700 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6129E417
+P 1900 1250
+F 0 "SW1" H 1900 1535 50  0000 C CNN
+F 1 "SW_PUSH" H 1900 1444 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 1900 1450 50  0001 C CNN
+F 3 "~" H 1900 1450 50  0001 C CNN
+	1    1900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D3
+U 1 1 612A76AD
+P 4100 1400
+F 0 "D3" H 4100 1183 50  0000 C CNN
+F 1 "1N4148WS" H 4100 1274 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4100 1225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 4100 1400 50  0001 C CNN
+	1    4100 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW11
+U 1 1 612B3CEC
+P 2650 3050
+F 0 "SW11" H 2650 3335 50  0000 C CNN
+F 1 "SW_PUSH" H 2650 3244 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 2650 3250 50  0001 C CNN
+F 3 "~" H 2650 3250 50  0001 C CNN
+	1    2650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW12
+U 1 1 612B3CF2
+P 3450 3050
+F 0 "SW12" H 3450 3335 50  0000 C CNN
+F 1 "SW_PUSH" H 3450 3244 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 3450 3250 50  0001 C CNN
+F 3 "~" H 3450 3250 50  0001 C CNN
+	1    3450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW10
+U 1 1 612B3CF8
+P 1950 3050
+F 0 "SW10" H 1950 3335 50  0000 C CNN
+F 1 "SW_PUSH" H 1950 3244 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 1950 3250 50  0001 C CNN
+F 3 "~" H 1950 3250 50  0001 C CNN
+	1    1950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D6
+U 1 1 612B3CFE
+P 4150 3200
+F 0 "D6" H 4150 2983 50  0000 C CNN
+F 1 "1N4148WS" H 4150 3074 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4150 3025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 4150 3200 50  0001 C CNN
+	1    4150 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 612B6A3A
+P 2650 2450
+F 0 "SW8" H 2650 2735 50  0000 C CNN
+F 1 "SW_PUSH" H 2650 2644 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 2650 2650 50  0001 C CNN
+F 3 "~" H 2650 2650 50  0001 C CNN
+	1    2650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW9
+U 1 1 612B6A40
+P 3450 2450
+F 0 "SW9" H 3450 2735 50  0000 C CNN
+F 1 "SW_PUSH" H 3450 2644 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 3450 2650 50  0001 C CNN
+F 3 "~" H 3450 2650 50  0001 C CNN
+	1    3450 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D5
+U 1 1 612B6A4C
+P 4150 2600
+F 0 "D5" H 4150 2383 50  0000 C CNN
+F 1 "1N4148WS" H 4150 2474 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4150 2425 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 4150 2600 50  0001 C CNN
+	1    4150 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 3200 3650 3200
+Wire Wire Line
+	2150 3200 2150 3050
+Wire Wire Line
+	2850 3050 2850 3200
+Connection ~ 2850 3200
+Wire Wire Line
+	2850 3200 2150 3200
+Wire Wire Line
+	3650 3050 3650 3200
+Connection ~ 3650 3200
+Wire Wire Line
+	3650 3200 2850 3200
+Wire Wire Line
+	4000 2600 3650 2600
+Wire Wire Line
+	2150 2600 2150 2450
+Wire Wire Line
+	2850 2450 2850 2600
+Connection ~ 2850 2600
+Wire Wire Line
+	2850 2600 2150 2600
+Wire Wire Line
+	3650 2450 3650 2600
+Connection ~ 3650 2600
+Wire Wire Line
+	3650 2600 2850 2600
+$Comp
+L power:+5V #PWR05
+U 1 1 61377CD9
+P 5550 5600
+F 0 "#PWR05" H 5550 5450 50  0001 C CNN
+F 1 "+5V" V 5565 5728 50  0000 L CNN
+F 2 "" H 5550 5600 50  0001 C CNN
+F 3 "" H 5550 5600 50  0001 C CNN
+	1    5550 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 6137C6EA
+P 1350 5400
+F 0 "#PWR01" H 1350 5250 50  0001 C CNN
+F 1 "+5V" V 1365 5528 50  0000 L CNN
+F 2 "" H 1350 5400 50  0001 C CNN
+F 3 "" H 1350 5400 50  0001 C CNN
+	1    1350 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 5600 5400 5600
+Wire Wire Line
+	3900 5600 4000 5600
+Wire Wire Line
+	4550 4700 4000 4700
+Wire Wire Line
+	4000 4700 4000 5600
+Connection ~ 4000 5600
+Wire Wire Line
+	4000 5600 4100 5600
+Wire Wire Line
+	4550 4300 4000 4300
+Wire Wire Line
+	4000 4300 4000 4700
+Connection ~ 4000 4700
+Wire Wire Line
+	4850 4700 5400 4700
+Wire Wire Line
+	5400 4700 5400 5600
+Connection ~ 5400 5600
+Wire Wire Line
+	5400 5600 5550 5600
+Wire Wire Line
+	4850 4300 5400 4300
+Wire Wire Line
+	5400 4300 5400 4700
+Connection ~ 5400 4700
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6129CDDD
+P 2600 1250
+F 0 "SW2" H 2600 1535 50  0000 C CNN
+F 1 "SW_PUSH" H 2600 1444 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 2600 1450 50  0001 C CNN
+F 3 "~" H 2600 1450 50  0001 C CNN
+	1    2600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 6129DE25
+P 3400 1250
+F 0 "SW3" H 3400 1535 50  0000 C CNN
+F 1 "SW_PUSH" H 3400 1444 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 3400 1450 50  0001 C CNN
+F 3 "~" H 3400 1450 50  0001 C CNN
+	1    3400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW7
+U 1 1 612B6A46
+P 1950 2450
+F 0 "SW7" H 1950 2735 50  0000 C CNN
+F 1 "SW_PUSH" H 1950 2644 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 1950 2650 50  0001 C CNN
+F 3 "~" H 1950 2650 50  0001 C CNN
+	1    1950 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 3200 2    50   Input ~ 0
+PB0
+Text GLabel 4300 2600 2    50   Input ~ 0
+PB1
+Text GLabel 4250 1400 2    50   Input ~ 0
+PB5
+Wire Wire Line
+	3950 1400 3600 1400
+Wire Wire Line
+	2100 1400 2100 1250
+Wire Wire Line
+	2800 1250 2800 1400
+Connection ~ 2800 1400
+Wire Wire Line
+	2800 1400 2100 1400
+Wire Wire Line
+	3600 1250 3600 1400
+Connection ~ 3600 1400
+Wire Wire Line
+	3600 1400 2800 1400
+Text GLabel 1700 1250 0    50   Input ~ 0
+PB2
+Text GLabel 2400 1250 0    50   Input ~ 0
+PB1
+Text GLabel 3200 1250 0    50   Input ~ 0
+PB0
+Text GLabel 1750 2450 0    50   Input ~ 0
+PB5
+Text GLabel 2450 2450 0    50   Input ~ 0
+PB2
+Text GLabel 3250 2450 0    50   Input ~ 0
+PB0
+Text GLabel 1750 3050 0    50   Input ~ 0
+PB5
+Text GLabel 2450 3050 0    50   Input ~ 0
+PB2
+Text GLabel 3250 3050 0    50   Input ~ 0
+PB1
+Text GLabel 3250 1850 0    50   Input ~ 0
+PB0
+Text GLabel 2450 1850 0    50   Input ~ 0
+PB1
+Text GLabel 1750 1850 0    50   Input ~ 0
+PB5
+Wire Wire Line
+	3650 2000 2850 2000
+Connection ~ 3650 2000
+Wire Wire Line
+	3650 1850 3650 2000
+Wire Wire Line
+	2850 2000 2150 2000
+Connection ~ 2850 2000
+Wire Wire Line
+	2850 1850 2850 2000
+Wire Wire Line
+	2150 2000 2150 1850
+Wire Wire Line
+	4000 2000 3650 2000
+Text GLabel 4300 2000 2    50   Input ~ 0
+PB2
+$Comp
+L Diode:1N4148WS D4
+U 1 1 612B20F2
+P 4150 2000
+F 0 "D4" H 4150 1783 50  0000 C CNN
+F 1 "1N4148WS" H 4150 1874 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4150 1825 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 4150 2000 50  0001 C CNN
+	1    4150 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 612B20EC
+P 1950 1850
+F 0 "SW4" H 1950 2135 50  0000 C CNN
+F 1 "SW_PUSH" H 1950 2044 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 1950 2050 50  0001 C CNN
+F 3 "~" H 1950 2050 50  0001 C CNN
+	1    1950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 612B20E6
+P 3450 1850
+F 0 "SW6" H 3450 2135 50  0000 C CNN
+F 1 "SW_PUSH" H 3450 2044 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 3450 2050 50  0001 C CNN
+F 3 "~" H 3450 2050 50  0001 C CNN
+	1    3450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW5
+U 1 1 612B20E0
+P 2650 1850
+F 0 "SW5" H 2650 2135 50  0000 C CNN
+F 1 "SW_PUSH" H 2650 2044 50  0000 C CNN
+F 2 "footprints:SW_PG1350_single_b2" H 2650 2050 50  0001 C CNN
+F 3 "~" H 2650 2050 50  0001 C CNN
+	1    2650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BZX384-xxx D1
+U 1 1 61209E27
+P 2500 5650
+F 0 "D1" V 2454 5730 50  0000 L CNN
+F 1 "3.6V" V 2545 5730 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 2500 5475 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BZX384_SERIES.pdf" H 2500 5650 50  0001 C CNN
+	1    2500 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:BZX384-xxx D2
+U 1 1 6121FE71
+P 2850 5650
+F 0 "D2" V 2804 5730 50  0000 L CNN
+F 1 "3.6V" V 2895 5730 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 2850 5475 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BZX384_SERIES.pdf" H 2850 5650 50  0001 C CNN
+	1    2850 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 5300 2000 5500
+Wire Wire Line
+	2100 5300 2100 5400
+Wire Wire Line
+	2500 5500 2000 5500
+Connection ~ 2000 5500
+Wire Wire Line
+	2000 5500 2000 5700
+Wire Wire Line
+	2850 5500 2850 5400
+Wire Wire Line
+	2850 5400 2100 5400
+Connection ~ 2100 5400
+Wire Wire Line
+	2100 5400 2100 5700
+Wire Wire Line
+	1750 5400 2100 5400
+$Comp
+L Device:R R3
+U 1 1 6120A7A3
+P 2100 5150
+F 0 "R3" H 2150 5150 50  0000 L CNN
+F 1 "68" V 2100 5100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2030 5150 50  0001 C CNN
+F 3 "~" H 2100 5150 50  0001 C CNN
+	1    2100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0103
+U 1 1 612498BF
+P 1400 6000
+F 0 "#PWR0103" H 1400 5850 50  0001 C CNN
+F 1 "VBUS" H 1415 6173 50  0000 C CNN
+F 2 "" H 1400 6000 50  0001 C CNN
+F 3 "" H 1400 6000 50  0001 C CNN
+	1    1400 6000
+	-1   0    0    1   
+$EndComp
+Connection ~ 1400 5400
+Wire Wire Line
+	1400 5400 1350 5400
+Wire Wire Line
+	1450 5400 1400 5400
+Wire Wire Line
+	1400 5500 1400 5400
+Text GLabel 2000 5700 3    50   Input ~ 0
+D+
+Text GLabel 2100 5700 3    50   Input ~ 0
+D-
+Wire Wire Line
+	2850 5800 2500 5800
+Connection ~ 2500 5800
+$Comp
+L power:GND #PWR0105
+U 1 1 6125C95A
+P 3100 7000
+F 0 "#PWR0105" H 3100 6750 50  0001 C CNN
+F 1 "GND" V 3105 6872 50  0000 R CNN
+F 2 "" H 3100 7000 50  0001 C CNN
+F 3 "" H 3100 7000 50  0001 C CNN
+	1    3100 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 6125D52A
+P 900 7000
+F 0 "#PWR0106" H 900 6750 50  0001 C CNN
+F 1 "GND" V 905 6872 50  0000 R CNN
+F 2 "" H 900 7000 50  0001 C CNN
+F 3 "" H 900 7000 50  0001 C CNN
+	1    900  7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61268C3E
+P 2950 7000
+F 0 "R5" V 2850 7000 50  0000 C CNN
+F 1 "5.1K" V 2950 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2880 7000 50  0001 C CNN
+F 3 "~" H 2950 7000 50  0001 C CNN
+	1    2950 7000
+	0    1    1    0   
+$EndComp
+Text GLabel 2800 7100 2    50   Input ~ 0
+D+
+Text GLabel 2800 7200 2    50   Input ~ 0
+D-
+$Comp
+L power:VBUS #PWR0107
+U 1 1 6125C1F8
+P 2800 6800
+F 0 "#PWR0107" H 2800 6650 50  0001 C CNN
+F 1 "VBUS" V 2700 6900 50  0000 L CNN
+F 2 "" H 2800 6800 50  0001 C CNN
+F 3 "" H 2800 6800 50  0001 C CNN
+	1    2800 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 6125BD85
+P 2800 7500
+F 0 "#PWR0108" H 2800 7250 50  0001 C CNN
+F 1 "GND" V 2805 7372 50  0000 R CNN
+F 2 "" H 2800 7500 50  0001 C CNN
+F 3 "" H 2800 7500 50  0001 C CNN
+	1    2800 7500
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2800 7300
+NoConn ~ 1200 7300
+Text GLabel 1200 7100 0    50   Input ~ 0
+D+
+Text GLabel 1200 7200 0    50   Input ~ 0
+D-
+$Comp
+L power:GND #PWR0109
+U 1 1 61295828
+P 2800 7600
+F 0 "#PWR0109" H 2800 7350 50  0001 C CNN
+F 1 "GND" V 2805 7472 50  0000 R CNN
+F 2 "" H 2800 7600 50  0001 C CNN
+F 3 "" H 2800 7600 50  0001 C CNN
+	1    2800 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USB4105-GF-A:USB4105-GF-A J1
+U 1 1 6128FB09
+P 2000 7200
+F 0 "J1" H 2000 7867 50  0000 C CNN
+F 1 "USB4105-GF-A" H 2000 7776 50  0000 C CNN
+F 2 "GCT_USB4105-GF-A" H 2000 7200 50  0001 L BNN
+F 3 "" H 2000 7200 50  0001 L BNN
+F 4 "3.31 mm" H 2000 7200 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 5 "Manufacturer Recommendations" H 2000 7200 50  0001 L BNN "STANDARD"
+F 6 "A3" H 2000 7200 50  0001 L BNN "PARTREV"
+F 7 "GCT" H 2000 7200 50  0001 L BNN "MANUFACTURER"
+	1    2000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 6126862A
+P 1050 7000
+F 0 "R4" V 950 7000 50  0000 C CNN
+F 1 "5.1K" V 1050 7000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 980 7000 50  0001 C CNN
+F 3 "~" H 1050 7000 50  0001 C CNN
+	1    1050 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 612AA0F1
+P 4750 7250
+F 0 "#PWR0101" H 4750 7000 50  0001 C CNN
+F 1 "GND" H 4755 7077 50  0000 C CNN
+F 2 "" H 4750 7250 50  0001 C CNN
+F 3 "" H 4750 7250 50  0001 C CNN
+	1    4750 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 612AA700
+P 4750 7250
+F 0 "#FLG0102" H 4750 7325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4750 7423 50  0000 C CNN
+F 2 "" H 4750 7250 50  0001 C CNN
+F 3 "~" H 4750 7250 50  0001 C CNN
+	1    4750 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1206L050_15:1206L050_15 F1
+U 1 1 612CF1A6
+P 1400 5750
+F 0 "F1" V 1500 6050 50  0000 R CNN
+F 1 "1206L050YR" V 1300 6350 50  0000 R CNN
+F 2 "footprints:PTC_1206" H 1400 5750 50  0001 L BNN
+F 3 "" H 1400 5750 50  0001 L BNN
+	1    1400 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VBUS #PWR0102
+U 1 1 61240D20
+P 4350 7250
+F 0 "#PWR0102" H 4350 7100 50  0001 C CNN
+F 1 "VBUS" H 4250 7450 50  0000 L CNN
+F 2 "" H 4350 7250 50  0001 C CNN
+F 3 "" H 4350 7250 50  0001 C CNN
+	1    4350 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61241C00
+P 4350 7250
+F 0 "#FLG0101" H 4350 7325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 7423 50  0000 C CNN
+F 2 "" H 4350 7250 50  0001 C CNN
+F 3 "~" H 4350 7250 50  0001 C CNN
+	1    4350 7250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 61243C13
+P 5150 7250
+F 0 "#PWR0104" H 5150 7100 50  0001 C CNN
+F 1 "+5V" H 5050 7450 50  0000 L CNN
+F 2 "" H 5150 7250 50  0001 C CNN
+F 3 "" H 5150 7250 50  0001 C CNN
+	1    5150 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 61244B08
+P 5150 7250
+F 0 "#FLG0103" H 5150 7325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 7423 50  0000 C CNN
+F 2 "" H 5150 7250 50  0001 C CNN
+F 3 "~" H 5150 7250 50  0001 C CNN
+	1    5150 7250
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

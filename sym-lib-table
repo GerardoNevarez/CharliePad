@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name USB4105-GF-A)(type Legacy)(uri ${KIPRJMOD}/footprints.pretty/USB4105-GF-A.lib)(options "")(descr ""))
+  (lib (name 1206L050_15)(type Legacy)(uri ${KIPRJMOD}/footprints.pretty/1206L050_15.lib)(options "")(descr ""))
+)
